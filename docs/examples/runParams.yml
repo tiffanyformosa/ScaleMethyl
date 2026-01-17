@@ -9,5 +9,7 @@ samples : ${projectDir}/docs/examples/samples.csv
 ### Path to a .json file defining the reference genome
 genome : ${projectDir}/docs/examples/genome.json
 
+aligner : "bsbolt"
+
 ### Value set for the test dataset. Please refer to documentation for an appropriate value to set for your actual experiment
 minUniqCount: 1000

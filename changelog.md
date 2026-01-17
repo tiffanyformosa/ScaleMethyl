@@ -1,4 +1,7 @@
 # Version 1.3
+## 1.3.2
+* Update example aligner to bsbolt to accommodate existing test data 
+* Update emit syntax in input_reads.nf to eliminate crashes
 ## 1.3.1
 * Fix to using custom windows for CH contexts
 ## 1.3.0

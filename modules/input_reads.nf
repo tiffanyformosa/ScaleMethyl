@@ -108,7 +108,7 @@ input:
 output: 
 	tuple val(libName), path("$outDir/*_S[1-9]*_R1*.fastq.gz"), emit: read1Fastq
 	tuple val(libName), path("$outDir/*_S[1-9]*_R2*.fastq.gz"), emit: read2Fastq 
-	path("$outDir/*_S0_*.fastq.gz"), emit: unknown optional true 
+	path("$outDir/*_S0_*.fastq.gz"), emit: unknown, optional: true
 	path("$outDir/*.tsv") 
 	tuple val(libName), path("$outDir/metrics.json"), emit: metrics
 publishDir file(params.outDir) / "barcodes", pattern: "$outDir/*{txt,tsv,json}", mode: 'copy'
